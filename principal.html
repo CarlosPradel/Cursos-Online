@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusWeb - Cursos Online</title>
+    <link rel="stylesheet" href="CSS/principal.css">
+</head>
+<body>
+    <header class="site-header">
+        <img src="imagenes/Logo_campusweb.webp" alt="Logo CampusWeb" class="logo">
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="Cursos.html">Cursos</a></li>
+                <li class="nav-item"><a href="categorias.html">Categorías</a></li>
+            </ul>
+        </nav>
+        <div id="usuarioInfo" class="user-info"></div>
+        <div class="auth-buttons">
+            <button class="login-button" onclick="location.href='login.html'">Iniciar Sesión</button>
+            <button class="register-button" onclick="location.href='register.html'">Registrarse</button>
+        </div>
+    </header>
+    <div class="hero-banner">
+        <div class="carousel">
+            <img src="imagenes/home_office.webp" alt="Imagen 1" class="carousel-image">
+            <img src="imagenes/home_office2.webp" alt="Imagen 2" class="carousel-image">
+            <img src="imagenes/home_office3.webp" alt="Imagen 3" class="carousel-image">
+        </div>
+        <div class="banner-text">
+            <h1>Amplía tus habilidades desde casa</h1>
+            <p>Explora los cursos más populares en Tecnología, Negocios, Arte y más.</p>
+        </div>
+        <button class="carousel-control prev">&#10094;</button>
+        <button class="carousel-control next">&#10095;</button>
+    </div>
+    <section class="featured-courses">
+        <h2>Cursos Destacados</h2>
+        <div class="course-list">
+            <!-- Los cursos serán añadidos aquí por JavaScript -->
+        </div>
+    </section>
+    <footer class="site-footer">
+        <p>© 2024 CampusWeb. Todos los derechos reservados.</p>
+    </footer>
+    <script src="JS/principal.js"></script>
+</body>
+</html>

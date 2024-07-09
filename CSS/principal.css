@@ -1,0 +1,149 @@
+/* Reset básico y estilos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado y navegación */
+.site-header {
+    background-color: #004D99;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.site-nav .nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero banner y carrusel de imágenes */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    display: none; /* Ocultar inicialmente, mostrado por JS */
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Sección de cursos destacados */
+.featured-courses {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+.site-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: white;
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+    .site-nav .nav-item {
+        display: block;
+        text-align: center;
+    }
+
+    .carousel-control {
+        display: none; /* Opcionalmente ocultar controles en móviles */
+    }
+
+    .course-list {
+        flex-direction: column;
+    }
+
+    .course {
+        width: 100%;
+    }
+}
+

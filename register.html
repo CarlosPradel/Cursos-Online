@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <form class="form" id="registerForm">
+        <p class="title">Register</p>
+        <p class="message">Regístrese ahora y obtenga acceso completo a nuestra aplicación</p>
+        <div class="flex">
+            <label>
+                <input class="input" type="text" id="nombre" placeholder="" required>
+                <span>Nombre</span>
+            </label>
+            <label>
+                <input class="input" type="text" id="apellido" placeholder="" required>
+                <span>Apellido</span>
+            </label>
+        </div>
+        <label>
+            <input class="input" type="email" id="email" placeholder="" required>
+            <span>Email</span>
+        </label>
+        <label>
+            <input class="input" type="password" id="password" placeholder="" required>
+            <span>Contraseña</span>
+        </label>
+        <button type="submit" class="submit">Registrar</button>
+        <p class="signin">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+    </form>
+
+    <script src="JS/registro.js"></script>
+</body>
+</html>

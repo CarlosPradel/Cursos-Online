@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecciones del Curso</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/detalle.css">
+</head>
+<body>
+    <header class="headerPrincipal">
+        <div class="container">
+            <h1 class="headerPrincipal-titulo">
+                <a href="principal.html">CURSOS</a>
+            </h1>
+            <nav class="headerPrincipal-nav">
+                <a class="headerPrincipal-nav-link" href="/principal.html">Inicio</a>
+                <a class="headerPrincipal-nav-link" href="/Cursos.html">Cursos</a>
+                <div class="auth-links">
+                    <a class="headerPrincipal-nav-link" href="/register.html">Registrarse</a>
+                    <a class="headerPrincipal-nav-link headerPrincipal-nav-link-app" href="/login.html">Iniciar Sesión</a>
+                </div>
+                <div class="user-info" style="display:none;">
+                    <span id="user-name"></span>
+                    <button id="logout-button">Cerrar Sesión</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail">
+        <div class="container">
+            <h2 id="course-title">Lecciones del Curso</h2>
+            <div id="lessons-container">
+                <h3>Lecciones</h3>
+                <ul id="lessons-list">
+                    <!-- Aquí se llenarán las lecciones -->
+                </ul>
+            </div>
+            <div id="lesson-detail" style="display:none;">
+                <h3 id="lesson-title">Título de la Lección</h3>
+                <p id="lesson-content">Contenido de la lección.</p>
+                <iframe id="lesson-video" width="560" height="315" style="display:none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <button id="enroll-button" style="display:none;">Inscribirse en el curso</button>
+            <button onclick="goBack()">Volver a los cursos</button>
+        </div>
+    </main>
+
+    <footer class="rodapePrincipal">
+        <div class="container">
+            <section class="rodapePrincipal-navMap">
+                <h3 class="subtitulo">Mapa de cursos</h3>
+                <!-- Mapa de cursos aquí -->
+            </section>
+        </div>
+    </footer>
+    <script src="js/detalle.js"></script>
+</body>
+</html>

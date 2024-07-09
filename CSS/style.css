@@ -1,0 +1,232 @@
+body {
+    background-color: #F2F5F7;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.headerPrincipal {
+    background-color: #5EC6F3;
+    padding: 20px 0;
+}
+
+.headerPrincipal-titulo {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.headerPrincipal-titulo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.headerPrincipal-nav-link {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #5EC6F3;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+    border-bottom: 1px solid #000000;
+}
+
+.headerPrincipal-nav-link:hover {
+    background-color: #5EC6F3;
+}
+
+.contenidoPrincipal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #5EC6F3;
+}
+
+.contenidoPrincipal-cursos-link {
+    height: 100px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 1%;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #CCC;
+    position: relative;
+}
+
+.contenidoPrincipal-cursos-link a {
+    text-decoration: none;
+    color: #5EC6F3;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidoPrincipal-cursos-link:hover {
+    box-shadow: 4px 4px 4px #5EC6F3;
+}
+
+.videoSobre {
+    background-color: #5E9EDC;
+    padding: 25px 0;
+}
+
+.videoSobre .container {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoSobre-video {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.videoSobre-sobre {
+    font-size: 1.3em;
+    line-height: 2;
+    text-align: center;
+}
+
+.videoSobre-sobre-title {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.videoSobre-button {
+    border-radius: 8px;
+    background-color: #5EC6F3;
+    display: block;
+    color: #FFF;
+    border: none;
+    height: 50px;
+    font-size: .8em;
+    outline: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.videoSobre-button:hover {
+    background-color: #5EC6F3;
+}
+
+.rodapePrincipal {
+    background-color: #324C64;
+    padding-top: 20px;
+    color: #FFF;
+}
+
+.rodapePrincipal .subtitulo {
+    color: #5EC6F3;
+}
+
+.rodapePrincipal-navMap-link {
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 10px;
+    font-size: .9em;
+}
+
+.navmap-list-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: .9em 0;
+    padding-left: .3em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.navmap-list-title-bancoDeDados { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-framework { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.navmap-list-title-backend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+
+@media(min-width: 769px) {
+    .container {
+        width: 85%;
+    }
+
+    .subtitulo {
+        text-align: left;
+    }
+
+    .headerPrincipal-nav-link {
+        border-radius: 5px;
+        border: 1px solid #9799A6;
+    }
+
+    .headerPrincipal-nav-link:hover {
+        color: #FFF;
+        background-color: #9799A6;
+    }
+
+    .headerPrincipal-titulo {
+        margin: 0;
+    }
+
+    .headerPrincipal-nav {
+        width: auto;
+    }
+
+    .headerPrincipal-nav-link {
+        width: auto;
+        margin: 0 0 0 10px;
+    }
+
+    .rodapePrincipal-contatoForm {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(3n+1) {
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 1000px) {
+    .contenidoPrincipal-cursos-link {
+        margin: 1.333%;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(3n) {
+        margin-right: 1.33%;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(3n+1) {
+        margin-left: 1.333%;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .contenidoPrincipal-cursos-link:nth-child(4n+1) {
+        margin-left: 0;
+    }
+
+    .videoSobre-sobre {
+        margin-left: 1.5em;
+    }
+}
